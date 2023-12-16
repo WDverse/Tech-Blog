@@ -37,9 +37,11 @@ Comment.init(
     },
     {
         sequelize,
-        timestamps: true,         // Disable timestamp columns.
+        timestamps: true,         // Enable timestamp columns.
         freezeTableName: true,     // Ensure that the table name matches the model name.
         underscored: true,         // Use snake_case for column names.
+        createdAt: true,
+        updatedAt: true,
         modelName: 'comment',         // Set the model name in singular form.
     }
 );
